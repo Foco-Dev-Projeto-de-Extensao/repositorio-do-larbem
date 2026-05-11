@@ -774,7 +774,7 @@ header {
 }
 
 
-/* ================================================================ SEXTA SEÇÃO ================================================================ */
+/* ================================================================ SEXTA SEÇÃO ======================================= */
 
 /* FOOTER  */
 footer {
@@ -782,12 +782,7 @@ footer {
   padding: 22px 40px;
   text-align: center;
   font-size: 0.82rem;
-  color: #2c2b2b;         /*original é #555*/
+  color: #2c2b2b;      /*original #555*/
   line-height: 1.7;
-
-  background-image: url("imagens/FUNDOS/fundo5.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; 
+  background-color: whitesmoke; 
 }

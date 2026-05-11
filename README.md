@@ -8,12 +8,12 @@
 > Unindo tecnologia e impacto social para fortalecer instituições locais através de soluções digitais e estratégias de captação.
 
 ## 🏷️ DADOS DOS DISCENTES
-| MATRÍCULA | NOME E SOBRENOME | PERFIS |
-| :--- | :--- | :--- |
-| **00000859509** | Amanda Aziz  | [Amanda-Aziz](https://github.com/Amanda-Aziz) |
-| **00000861020** | Mozart Moura | [mozartDemarias](https://github.com/mozartDemarias) |
-| **00000851337** | Marcos Vinicius  | [Marcosbd8204](https://github.com/Marcosbd8204) |
-| **00000860561** | Diego Souza  | [DiegoSouzaTech](https://github.com/DiegoSouzaTech) |
+| MATRÍCULA | NOME E SOBRENOME | GITHUB | PERFIS |
+| :--- | :--- | :--- |:--- |
+| **00000859509** | Amanda Aziz  | [Amanda-Aziz](https://github.com/Amanda-Aziz) | <img src="https://avatars.githubusercontent.com/u/142847924?v=4" width="60px;"/> |
+| **00000861020** | Mozart Moura | [mozartDemarias](https://github.com/mozartDemarias) | <img src="https://avatars.githubusercontent.com/u/207468370?v=4" width="60px;"/> |
+| **00000851337** | Marcos Vinicius  | [Marcosbd8204](https://github.com/Marcosbd8204) | <img src="https://avatars.githubusercontent.com/u/83377302?v=4" width="60px;"/> |
+| **00000860561** | Diego Souza  | [DiegoSouzaTech](https://github.com/DiegoSouzaTech) | <img src="https://avatars.githubusercontent.com/u/206262818?v=4" width="60px;"/> |
 
 ---
 
@@ -35,8 +35,3 @@ Neste repositório, estão disponíveis:
 *   ✅ **Protótipos de Alta Fidelidade** (Design do site)
 *   ✅ **Fluxogramas de Processos**
 *   ✅ **Documentação de Requisitos e Usabilidade**
-
----
-
-## 🔗 Links Úteis
-[APRESENTAÇÃO](https://canva.link/8cmxldpm28i7thu)
