@@ -774,7 +774,7 @@ header {
 }
 
 
-/* ================================================================ SEXTA SEÇÃO ======================================= */
+/* ================================================================ SEXTA SEÇÃO ==================================== */
 
 /* FOOTER  */
 footer {
@@ -785,4 +785,504 @@ footer {
   color: #2c2b2b;      /*original #555*/
   line-height: 1.7;
   background-color: whitesmoke; 
+}
+
+/* ==================================================== RESPONSIVIDADE DO SITE HOME ================================= */
+
+/* ────────────────────────────────────────────────────────────────
+   TABLET GRANDE  (≤ 1200px)
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 1200px) {
+
+
+.btn-hamburger {
+  display: none; /* escondido no desktop */
+}
+
+
+  /* PRIMEIRA SEÇÃO */
+  .container {
+    gap: 60px;
+    padding: 80px 40px 0 40px;
+  }
+
+  .logo-text {
+    font-size: 100px;
+    letter-spacing: -4px;
+  }
+
+  .linha {
+    width: 420px;
+  }
+
+  .card {
+    width: 320px;
+    height: 320px;
+  }
+
+  /* SEGUNDA SEÇÃO */
+  .valores-titulo {
+    font-size: 80px;
+  }
+
+  /* TERCEIRA SEÇÃO */
+  .servicos-titulo {
+    font-size: 80px;
+  }
+
+  .servicos-descricao {
+    font-size: 20px;
+  }
+
+  /* QUARTA SEÇÃO */
+  .quarta-secao-inner {
+    gap: 140px;
+  }
+
+  .doacao-titulo {
+    font-size: 72px;
+  }
+
+  /* QUINTA SEÇÃO */
+  .ajudar-titulo {
+    font-size: 70px;
+  }
+
+  /* SEXTA SEÇÃO */
+  .contact-section {
+    gap: 80px !important;
+  }
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   TABLET  (≤ 900px)
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+
+  .btn-hamburger {
+    display: flex; /* aparece no tablet e mobile */
+  }
+
+
+  /* NAV — hamburguer */
+  .nav {
+    padding: 20px 5%;
+    position: relative;
+  }
+
+  .nav a {
+    display: none;
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  /* Menu aberto */
+  .nav.menu-aberto {
+    flex-wrap: wrap;
+    background: rgba(248, 244, 235, 0.85); /* transparente */
+    backdrop-filter: blur(1.1px);            /* efeito vidro fosco */
+    -webkit-backdrop-filter: blur(8px);    /* Safari */
+    border-radius: 20px;
+    border: 3px solid #111;
+    padding: 16px 16px 16px 16px;
+    padding-right: 60px;                   /* espaço para o botão ✕ não sobrepor */
+    gap: 10px;
+    position: fixed;
+    top: 16px;
+    left: 5%;
+    right: 5%;
+    z-index: 100;
+    box-shadow: 6px 6px 0 #111;
+  }
+
+  .nav.menu-aberto a {
+    display: flex;
+  }
+
+  /* Botão hamburguer */
+  .btn-hamburger {
+    display: flex !important;
+    position: fixed;
+    top: 24px;
+    right: calc(5% + 10px); /* alinha com a borda do menu */
+    z-index: 200;
+    background: #f8f4eb;
+    border: 3px solid #111;
+    border-radius: 50px;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #111;
+    transition: all 0.2s;
+  }
+
+  .btn-hamburger:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #111;
+  }
+
+  /* PRIMEIRA SEÇÃO — empilha */
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 80px 32px 40px 32px;
+    gap: 40px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-text {
+    font-size: 72px;
+    letter-spacing: -3px;
+  }
+
+  .linha {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .titulo {
+    font-size: 22px;
+  }
+
+  .descricao {
+    font-size: 17px;
+    max-width: 480px;
+  }
+
+  .card {
+    width: 260px;
+    height: 260px;
+  }
+
+  /* SEGUNDA SEÇÃO */
+  .valores-titulo {
+    font-size: 60px;
+    letter-spacing: -1px;
+  }
+
+  .valores-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* TERCEIRA SEÇÃO */
+  .servicos-section {
+    padding: 60px 8%;
+  }
+
+  .servicos-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .servicos-titulo {
+    font-size: 70px;
+    letter-spacing: -2px;
+  }
+
+  .servicos-descricao {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  /* QUARTA SEÇÃO */
+  .quarta-secao {
+    padding: 60px 6%;
+  }
+
+  .quarta-secao-inner {
+    gap: 80px;
+  }
+
+  /* QUINTA SEÇÃO */
+  .ajudar-titulo {
+    font-size: 52px;
+    letter-spacing: -2px;
+  }
+
+  .ajudar-descricao {
+    font-size: 17px;
+  }
+
+  .ajudar-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 480px;
+  }
+
+  /* SEXTA SEÇÃO */
+  .contact-section {
+    flex-direction: column !important;
+    padding: 40px 24px !important;
+    gap: 40px !important;
+  }
+
+  .contact-info {
+    max-width: 100% !important;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 36px 28px;
+  }
+
+
+  .categorias-lista-col {
+    width: 100%;
+  }
+
+  .categoria-item {
+    width: 100%;
+    height: 160px;
+  }
+
+  .categoria-item span {
+    font-size: 40px; /* garante que o texto não corta */
+  }
+
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   MOBILE  (≤ 600px)
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+
+  /* PRIMEIRA SEÇÃO */
+  .container {
+    padding: 70px 20px 32px 20px;
+    gap: 28px;
+  }
+
+  .logo-text {
+    font-size: 52px;
+    letter-spacing: -2px;
+  }
+
+  .titulo {
+    font-size: 18px;
+  }
+
+  .descricao {
+    font-size: 15px;
+  }
+
+  .card {
+    width: 220px;
+    height: 220px;
+  }
+
+  .card-content {
+    padding: 24px;
+  }
+
+  /* SEGUNDA SEÇÃO */
+  .valores-section {
+    padding: 40px 16px;
+  }
+
+  .valores-titulo {
+    font-size: 38px;
+    letter-spacing: 0;
+    margin-bottom: 28px;
+  }
+
+  .valores-grid {
+    gap: 16px;
+  }
+
+  .valor-content {
+    padding: 20px;
+  }
+
+  .valor-content {
+    padding: 16px;
+    min-height: auto;
+  }
+
+  .valor-content h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .valor-content p {
+    font-size: 0.85rem;
+  }
+
+
+  /* TERCEIRA SEÇÃO */
+  .servicos-section {
+    padding: 40px 5%;
+  }
+
+  .servicos-titulo {
+    font-size: 52px;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+  }
+
+  .servicos-descricao {
+    font-size: 16px;
+  }
+
+  .servico-item {
+    height: auto;
+    min-height: 60px;
+    padding: 14px 24px;
+    border-radius: 20px;
+  }
+
+  .servico-item p {
+    font-size: 14px;
+    white-space: normal;
+  }
+
+  /* QUARTA SEÇÃO */
+  .quarta-secao {
+    padding: 40px 5%;
+  }
+
+  .quarta-secao-inner {
+    gap: 60px;
+  }
+
+  .loja-titulo {
+    font-size: 52px !important;
+    letter-spacing: -3px;
+  }
+
+  .loja-descricao {
+    font-size: 15px !important;
+  }
+
+  .btn-loja,
+  .btn-doacao {
+    padding: 14px 32px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .doacao-titulo {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .doacao-subtitulo {
+    font-size: 17px;
+  }
+
+  .doacao-texto {
+    font-size: 15px;
+  }
+
+  .categoria-item span {
+    font-size: 28px;
+  }
+
+  .categorias-lista-col {
+    width: 100%;
+  }
+
+  .categoria-item {
+    width: 100%;
+    height: 160px; /* ou o valor que preferir */
+  }
+
+  /* MARQUEE */
+  .marquee-content span {
+    font-size: 16px;
+  }
+
+  /* QUINTA SEÇÃO */
+  .ajudar-section {
+    padding: 40px 5%;
+  }
+
+  .ajudar-titulo {
+    font-size: 38px;
+    letter-spacing: -1px;
+  }
+
+  .ajudar-descricao {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .ajudar-card {
+    padding: 20px 16px;  /* era 28px 20px */
+    min-height: auto;    /* remove o mínimo de 220px */
+    box-shadow: 6px 6px 0px #111; /* reduz a sombra também */
+  }
+
+  .ajudar-card h3 {
+    font-size: 18px;     /* era 20px */
+    margin-bottom: 12px; /* era 20px */
+  }
+
+  .ajudar-card p {
+    font-size: 15px;     /* era 16px */
+    line-height: 1.4;
+  }
+
+
+  /* SEXTA SEÇÃO */
+  .contact-info h1 {
+    font-size: 2.2rem !important;
+    margin-bottom: 24px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 18px 20px;
+    font-size: 0.75rem;
+  }
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   MOBILE PEQUENO  (≤ 380px)
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 380px) {
+
+  .logo-text {
+    font-size: 42px;
+  }
+
+  .valores-titulo {
+    font-size: 30px;
+  }
+
+  .servicos-titulo {
+    font-size: 40px;
+  }
+
+  .ajudar-titulo {
+    font-size: 30px;
+  }
+
+  .card {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────────
+   BOTÃO HAMBURGUER — oculto por padrão no desktop
+   ──────────────────────────────────────────────────────────────── */
+.btn-hamburger {
+  display: none;
 }
