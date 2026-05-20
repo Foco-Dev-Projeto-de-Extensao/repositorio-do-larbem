@@ -10,12 +10,10 @@ Este documento detalha os requisitos funcionais e não funcionais para o desenvo
 
 | ID | Requisito | Descrição |
 | :--- | :--- | :--- |
-| **RF01** | **Catálogo do Bazar** | O sistema deve exibir uma galeria com fotos, descrições e preços (opcional) dos itens disponíveis no bazar solidário. |
-| **RF02** | **Formulário de Contato** | O site deve disponibilizar um formulário para envio de mensagens (Nome, E-mail, Assunto e Mensagem). |
-| **RF03** | **Botão de WhatsApp** | Deve haver um link direto ou botão flutuante para iniciar uma conversa imediata com a instituição. |
-| **RF04** | **Geolocalização** | Integração com a API do Google Maps para exibir a localização exata da sede em Recife/PE. |
-| **RF05** | **Informativo de Doações** | Seção dedicada com dados para PIX, lista de materiais prioritários e horários de coleta. |
-| **RF06** | **Validação de Dados** | O JavaScript deve validar se o campo de e-mail é válido antes de permitir o envio do formulário. |
+| **RF01** | **Formulário de Contato** | O site deve disponibilizar um formulário para envio de mensagens (Nome, E-mail, Assunto e Mensagem). |
+| **RF02** | **Botão de WhatsApp** | Deve haver um link direto ou botão flutuante para iniciar uma conversa imediata com a instituição. |
+| **RF03** | **Informativo de Doações** | Seção dedicada com dados para PIX, lista de materiais prioritários e horários de coleta. |
+| **RF04** | **Validação de Dados** | O JavaScript deve validar se o campo de e-mail é válido antes de permitir o envio do formulário. |
 
 ---
 
@@ -33,4 +31,4 @@ Este documento detalha os requisitos funcionais e não funcionais para o desenvo
 | **RNF06** | **Hospedagem** | O deploy deve ser realizado em plataforma de integração contínua (ex: GitHub Pages ou Vercel). |
 
 ---
-> **Nota:** Este documento serve como guia para a equipe de desenvolvimento (Amanda, Mozart, Marcos e Diego) e para a validação final do projeto de extensão.
+> **Nota:** Este documento serve como guia para a equipe de desenvolvimento (Amanda e Mozart) e para a validação final do projeto de extensão.
