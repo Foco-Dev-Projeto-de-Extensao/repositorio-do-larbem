@@ -1,8 +1,8 @@
-## UNIVERSIDADE CATÓLICA DE PERNAMBUCO - CC
+## UNICAP - UNIVERSIDADE CATÓLICA DE PERNAMBUCO
 
 # 🌍 Computação, Sociedade e Sustentabilidade
 
-> **Projeto de Extensão Universitária**  
+> **Projeto de Extensão Universitária do curso de Ciências da Computação**  
 > Unindo tecnologia e impacto social para fortalecer instituições locais através de soluções digitais e estratégias de captação.
 
 ## 🏷️ DADOS DOS COTRIBUIDORES
@@ -28,9 +28,9 @@ Este repositório documenta o desenvolvimento da interface e estrutura digital p
 
 ---
 
-# 💻 Projeto: Site Institucional - Lar Bem Elizabeth (Extensão)
+# 💻 Site Institucional - Lar Bem Elizabeth
 
-> Status: 🟥 Em Desenvolvimento
+> Status: ❇️ FINALIZADO
 
 ## SOBRE O PROJETO
 Este site foi desenvolvido como parte de um projeto de extensão universitária para apoiar o **Lar Bem Elizabeth**, localizado em Recife/PE. O objetivo é criar uma ponte digital entre a instituição e a comunidade, facilitando a doação de materiais e a divulgação do bazar solidário.
