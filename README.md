@@ -5,14 +5,6 @@
 > **Projeto de Extensão Universitária do curso de Ciências da Computação**  
 > Unindo tecnologia e impacto social para fortalecer instituições locais através de soluções digitais e estratégias de captação.
 
-## 🏷️ DADOS DOS COTRIBUIDORES
-| MATRÍCULA | NOME E SOBRENOME | GITHUB | PERFIS |
-| :--- | :--- | :--- |:--- |
-| **00000859509** | Amanda Aziz  | [Amanda-Aziz](https://github.com/Amanda-Aziz) | <img src="https://avatars.githubusercontent.com/u/142847924?v=4" width="60px;"/> |
-| **00000861020** | Mozart Moura | [mozartDemarias](https://github.com/mozartDemarias) | <img src="https://avatars.githubusercontent.com/u/207468370?v=4" width="60px;"/> |
-| **00000851337** | Marcos Vinicius  | [Marcosbd8204](https://github.com/Marcosbd8204) | <img src="https://avatars.githubusercontent.com/u/83377302?v=4" width="60px;"/> |
-| **00000860561** | Diego Souza  | [DiegoSouzaTech](https://github.com/DiegoSouzaTech) | <img src="https://avatars.githubusercontent.com/u/206262818?v=4" width="60px;"/> |
-
 ---
 
 ## 💡 Sobre o Projeto
@@ -85,3 +77,35 @@ A interface foi projetada com foco em acessibilidade e modernidade, utilizando o
 ├── LICENSE                   # Licença jurídica do software livre (GNU GPLv3)
 └── README.md                 # Guia de introdução e documentação do repositório
 ```
+
+---
+
+## 🚀 Como Executar o Projeto
+
+Como o site foi desenvolvido com tecnologias nativas da web, você não precisa instalar nenhum gerenciador de pacotes para testá-lo. Escolha uma das opções abaixo:
+
+### Opção 1: Execução Local Rápida
+1. Faça o download ou clone este repositório:
+   ```bash
+   git clone https://github.com
+   ```
+2. Acesse a pasta raiz do projeto.
+3. Entre na pasta `src/` e dê um **duplo clique** no arquivo `index.html`. O site abrirá automaticamente no seu navegador padrão.
+
+### Opção 2: Usando a Extensão Live Server (Recomendado para Devs)
+Se você utiliza o **VS Code**, pode rodar o projeto com recarregamento automático:
+1. Abra a pasta do projeto no VS Code.
+2. Instale a extensão **Live Server** (caso ainda não tenha).
+3. Clique com o botão direito sobre o arquivo `src/index.html` e selecione **"Open with Live Server"**.
+4. O site será servido localmente no endereço `http://xxx.x.x.x:xxxx`.
+
+---
+
+## 🏷️ DADOS DOS CONTRIBUIDORES
+
+| MATRÍCULA | NOME E SOBRENOME | GITHUB | LINKEDIN | PERFIS |
+| :--- | :--- | :--- | :--- | :--- |
+| **00000859509** | Amanda Aziz  | [Amanda-Aziz](https://github.com/Amanda-Aziz) | [LinkedIn](https://www.linkedin.com/in/amanda-aziz-30a30p/) | <img src="https://avatars.githubusercontent.com/u/142847924?v=4" width="60px;"/> |
+| **00000861020** | Mozart Moura | [mozartDemarias](https://github.com/mozartDemarias) | [LinkedIn](https://www.linkedin.com/in/mozart-moura/) | <img src="https://avatars.githubusercontent.com/u/207468370?v=4" width="60px;"/> |
+| **00000851337** | Marcos Vinicius  | [Marcosbd8204](https://github.com/Marcosbd8204) | LinkedIn | <img src="https://avatars.githubusercontent.com/u/83377302?v=4" width="60px;"/> |
+| **00000860561** | Diego Souza  | [DiegoSouzaTech](https://github.com/DiegoSouzaTech) | LinkedIn | <img src="https://avatars.githubusercontent.com/u/206262818?v=4" width="60px;"/> |
