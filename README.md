@@ -41,19 +41,58 @@ A interface foi projetada com foco em acessibilidade e modernidade, utilizando o
 *   **Protótipo:** [Link do Canva](https://canva.link/y99914r51eaem4d)
 *   **Cores:** Identidade vibrante baseada em tons de roxo, rosa, laranja e branco, transmitindo acolhimento e energia.
 
-| Cor | Hexadecimal | Nome |
-| :---: | :---: | :---: |
-| ![#ba5bff](https://img.shields.io/badge/%20%20-ba5bff) | `#ba5bff` | **Roxo** |
-| ![#ff6eaf](https://img.shields.io/badge/%20%20-ff6eaf) | `#ff6eaf` | **Rosa** |
-| ![#ff9800](https://img.shields.io/badge/%20%20-ff9800) | `#ff9800` | **Laranja** |
-
+<p align="center">
+  <table align="center">
+    <thead>
+      <tr>
+        <th align="center">Cor</th>
+        <th align="center">Hexadecimal</th>
+        <th align="center">Nome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center"><img src="https://img.shields.io/badge/%20%20-ba5bff" alt="#ba5bff"></td>
+        <td align="center"><code>#ba5bff</code></td>
+        <td align="center"><b>Roxo</b></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="https://img.shields.io/badge/%20%20-ff6eaf" alt="#ff6eaf"></td>
+        <td align="center"><code>#ff6eaf</code></td>
+        <td align="center"><b>Rosa</b></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="https://img.shields.io/badge/%20%20-ff9800" alt="#ff9800"></td>
+        <td align="center"><code>#ff9800</code></td>
+        <td align="center"><b>Laranja</b></td>
+      </tr>
+    </tbody>
+  </table>
+</p>
 
 ## 🛠️ Tecnologias Utilizadas
 
-| Tecnologia | Função |
-| :--- | :--- |
-| **HTML5 / CSS3** | Estruturação e estilização (incluindo gradientes e sombras). |
-| **JavaScript** | Interatividade e lógica de envio do formulário. |
+<p align="center">
+  <table align="center" width="100%">
+    <thead>
+      <tr>
+        <th align="left">Tecnologia</th>
+        <th align="left">Função</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left"><b>HTML5 / CSS3</b></td>
+        <td align="left">Estruturação e estilização (incluindo gradientes e sombras).</td>
+      </tr>
+      <tr>
+        <td align="left"><b>JavaScript</b></td>
+        <td align="left">Interatividade e lógica de envio do formulário.</td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+
 
 ## ⚙️ Funcionalidades Principais
 - [x] Design Responsivo (Adaptável a dispositivos móveis).
@@ -108,12 +147,53 @@ Se você utiliza o **VS Code**, pode rodar o projeto com recarregamento automát
 4. O site será servido localmente no endereço `http://xxx.x.x.x:xxxx`.
 
 ---
+<div align="center">
 
-## 🏷️ DADOS DOS CONTRIBUIDORES
+   ## 🏷️ DADOS DOS CONTRIBUIDORES
+</div>
+<br>
 
-| MATRÍCULA | NOME E SOBRENOME | GITHUB | LINKEDIN | PERFIS |
-| :--- | :--- | :--- | :--- | :--- |
-| **00000859509** | Amanda Aziz  | [Amanda-Aziz](https://github.com/Amanda-Aziz) | [LinkedIn](https://www.linkedin.com/in/amanda-aziz-30a30p/) | <img src="https://avatars.githubusercontent.com/u/142847924?v=4" width="60px;"/> |
-| **00000861020** | Mozart Moura | [mozartDemarias](https://github.com/mozartDemarias) | [LinkedIn](https://www.linkedin.com/in/mozart-moura/) | <img src="https://avatars.githubusercontent.com/u/207468370?v=4" width="60px;"/> |
-| **00000851337** | Marcos Vinicius  | [Marcosbd8204](https://github.com/Marcosbd8204) | LinkedIn | <img src="https://avatars.githubusercontent.com/u/83377302?v=4" width="60px;"/> |
-| **00000860561** | Diego Souza  | [DiegoSouzaTech](https://github.com/DiegoSouzaTech) | LinkedIn | <img src="https://avatars.githubusercontent.com/u/206262818?v=4" width="60px;"/> |
+<p align="center">
+  <table align="center">
+    <thead>
+      <tr>
+        <th align="center">MATRÍCULA</th>
+        <th align="center">NOME E SOBRENOME</th>
+        <th align="center">GITHUB</th>
+        <th align="center">LINKEDIN</th>
+        <th align="center">PERFIS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center"><b>00000859509</b></td>
+        <td align="center">Amanda Aziz</td>
+        <td align="center"><a href="https://github.com/Amanda-Aziz">Amanda-Aziz</a></td>
+        <td align="center"><a href="https://www.linkedin.com/in/amanda-aziz-30a30p/">LinkedIn</a></td>
+        <td align="center"><img src="https://avatars.githubusercontent.com/u/142847924?v=4" width="60" style="border-radius: 50%;"></td>
+      </tr>
+      <tr>
+        <td align="center"><b>00000861020</b></td>
+        <td align="center">Mozart Moura</td>
+        <td align="center"><a href="https://github.com/mozartDemarias">mozartDemarias</a></td>
+        <td align="center"><a href="https://www.linkedin.com/in/mozart-moura/">LinkedIn</a></td>
+        <td align="center"><img src="https://avatars.githubusercontent.com/u/207468370?v=4" width="60" style="border-radius: 50%;"></td>
+      </tr>
+      <tr>
+        <td align="center"><b>00000851337</b></td>
+        <td align="center">Marcos Vinicius</td>
+        <td align="center"><a href="https://github.com/Marcosbd8204">Marcosbd8204</a></td>
+        <td align="center">LinkedIn</td>
+        <td align="center"><img src="https://avatars.githubusercontent.com/u/83377302?v=4" width="60" style="border-radius: 50%;"></td>
+      </tr>
+      <tr>
+        <td align="center"><b>00000860561</b></td>
+        <td align="center">Diego Souza</td>
+        <td align="center"><a href="https://github.com/DiegoSouzaTech">DiegoSouzaTech</a></td>
+        <td align="center">LinkedIn</td>
+        <td align="center"><img src="https://avatars.githubusercontent.com/u/206262818?v=4" width="60" style="border-radius: 50%;"></td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+
