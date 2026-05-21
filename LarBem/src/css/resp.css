@@ -101,12 +101,13 @@
   }
 
   .hero-left {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -300px; /* negativo = sobe / positivo = desce */
-  }
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* REMOVA: margin-top: -300px; */
+}
+
 
   .logo-text {
     font-size: 90px;
@@ -132,20 +133,7 @@
     height: 300px;
   }
 
-  /* ── SEGUNDA SEÇÃO — VALORES ── */
-
-  .valores-section{
-    margin-top: -300px; /* negativo = sobe / positivo = desce */
-  }
-
-  .valores-titulo {
-    font-size: 70px;
-    letter-spacing: -1px;
-  }
-
-  .valores-grid {
-    gap: 24px;
-  }
+  
 
   /* ── TERCEIRA SEÇÃO — SERVIÇOS ── */
   .servicos-section {
@@ -254,6 +242,7 @@
   .contact-card {
     width: 340px;
     min-width: 340px;
+    margin-top: 50px;
   }
 }
 
