@@ -152,26 +152,26 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
 
-  </div>    <!-- FIM DA PARTE DOS CARDS COM OS VALORES -->
+    </div>    <!-- FIM DA PARTE DOS CARDS COM OS VALORES -->
 
-  <script>
-    const observerOptions = {
-      threshold: 0.1 // Ativa quando 10% do card aparece
-    };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('aparecer');
-        }
+    <script>
+      const observerOptions = {
+        threshold: 0.1 // Ativa quando 10% do card aparece
+      };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('aparecer');
+          }
+        });
+      }, observerOptions);
+      // Seleciona todos os cards de valor
+      document.querySelectorAll('.valor-content').forEach((card) => {
+        observer.observe(card);
       });
-    }, observerOptions);
-    // Seleciona todos os cards de valor
-    document.querySelectorAll('.valor-content').forEach((card) => {
-      observer.observe(card);
-    });
-    </script>
+      </script>
 
-</div>
+  </div>
 
 
 </section>
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- Lado Direito: Lista de Cards -->
     <div class="servicos-lista">        <!-- essa parte do java é pro botao nao executar ação nenhuma do clique -->
   <a href="javascript:void(0)" class="servico-item">
-    <p>Garantimos um lar seguro, alimentação e cuidados dignos 24 horas por dia.</p>
+    <p>Garantimos um lar seguro, alimentação e cuidados dignos 24 horas.</p>
   </a>
 
   <a href="javascript:void(0)" class="servico-item">
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </div>
 
-<!-- ====================================================== QUARTA SEÇÃO DO SITE - LOJA E BAZAR =============================================== -->
+<!-- ================================================== QUARTA SEÇÃO DO SITE - VOLUNTARIO E BAZAR ============================================= -->
 
 <!-- FAIXA ANIMADA (MARQUEE) — divisória entre Serviços e Quarta Seção -->
 <div class="marquee">

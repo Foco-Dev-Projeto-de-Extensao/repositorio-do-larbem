@@ -1,107 +1,268 @@
-/* ==================================================== 
+/* ================================================================
+   resp.css — Media Queries de Responsividade
+   Apenas responsividade. Não altera o design base do style.css.
+   ================================================================
 
-    RESPONSIVIDADE DO SITE PARA MOBILE E TABLET
+   BREAKPOINTS:
+   Tablet  → max-width: 1024px
+   Mobile  → max-width: 480px
+   ================================================================ */
 
-    =================================================== */
-
+/* ─────────────────────────────────────────────────────────────────
+   META VIEWPORT — garanta que esta tag esteja no <head> do HTML:
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   (Já está no seu HTML — nada a fazer aqui.)
+   ───────────────────────────────────────────────────────────────── */
 
 
 /* ────────────────────────────────────────────────────────────────
-   BOTÃO HAMBURGUER — oculto por padrão no desktop
+            BOTÃO HAMBURGUER — oculto por padrão no desktop
    ──────────────────────────────────────────────────────────────── */
 .btn-hamburger {
   display: none;
 }
 
 
-/* ────────────────────────────────────────────────────────────────
-   
-    RESPONSIVO PARA TABLETS GRANDES  (≤ 1200px)
-   
-    ──────────────────────────────────────────────────────────────── */
+/* ================================================================
+                                TABLET  ·  até 1024px
+   ================================================================ */
+@media (max-width: 1024px) {
 
-@media (max-width: 1200px) {
+  /* ── NAVEGAÇÃO ── */
+  .nav {
+    padding: 20px 5%;
+    position: relative;
+  }
 
-  /* ==================================== PRIMEIRA SEÇÃO */
+  .nav a {
+    display: none;
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .btn-hamburger {
+    display: flex !important;
+    position: fixed;
+    top: 20px;           /* topo do painel */
+    right: 8px;          /* dentro da área do painel (260px de largura) */
+    transform: none;     /* remove o translateY(-50%) */
+    z-index: 200;
+    background: #f8f4eb;
+    border: 3px solid #111;
+    border-radius: 50px;
+    padding: 8px 14px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #111;
+    transition: all 0.2s;
+  }
+
+  .btn-hamburger:hover {
+    padding-left: 16px;
+  }
+
+  /* Menu aberto — painel lateral direito */
+  .nav.menu-aberto {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: center;  /* centraliza os links verticalmente */
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: rgba(248, 244, 235, 0.10);  
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px 0 0 20px;
+    border: 2px solid #111;
+    border-right: none;
+    padding: 80px 24px 40px 24px;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;   /* ocupa a tela toda */
+    width: 360px;
+    z-index: 100;
+    box-shadow: -6px 0 0 #111;
+  }
+
+  .nav.menu-aberto a {
+    display: flex;
+    width: 100%;
+  }
+
+  /* ── HERO (PRIMEIRA SEÇÃO) ── */
   .container {
+    flex-direction: column;
     gap: 60px;
-    padding: 80px 40px 0 40px;
+    padding: 120px 40px 60px;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -300px; /* negativo = sobe / positivo = desce */
   }
 
   .logo-text {
-    font-size: 100px;
-    letter-spacing: -4px;
+    font-size: 90px;
+    letter-spacing: -3px;
   }
 
   .linha {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .titulo {
+    font-size: 22px;
+  }
+
+  .descricao {
+    font-size: 17px;
+    max-width: 100%;
   }
 
   .card {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
   }
 
-  /* ==================================== SEGUNDA SEÇÃO */
+  /* ── SEGUNDA SEÇÃO — VALORES ── */
+
+  .valores-section{
+    margin-top: -300px; /* negativo = sobe / positivo = desce */
+  }
+
   .valores-titulo {
-    font-size: 80px;
+    font-size: 70px;
+    letter-spacing: -1px;
   }
 
+  .valores-grid {
+    gap: 24px;
+  }
 
-  /* ==================================== TERCEIRA SEÇÃO */
+  /* ── TERCEIRA SEÇÃO — SERVIÇOS ── */
+  .servicos-section {
+    padding: 60px 6% 80px;
+  }
+
+  .servicos-container {
+    gap: 48px;
+  }
+
   .servicos-titulo {
     font-size: 80px;
+    letter-spacing: -2px;
   }
 
   .servicos-descricao {
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  /* ==================================== QUARTA SEÇÃO */
+  .servico-item {
+    height: auto;
+    min-height: 75px;
+    padding: 16px 28px;
+  }
+
+  .servico-item p {
+    font-size: 14px;
+  }
+
+  /* ── QUARTA SEÇÃO — LOJA / BAZAR ── */
+  #QUARTA-SECAO {
+    padding: 60px 6%;
+  }
+
   .quarta-secao-inner {
-    gap: 140px;
+    gap: 100px;
+  }
+
+  .linha-loja {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .bazar-carousel {
+    height: 300px;
+  }
+
+  .doacao-info-col {
+    text-align: center;
   }
 
   .doacao-titulo {
-    font-size: 72px;
+    letter-spacing: -2px;
   }
 
-  /* =================== VOLUNTARIADO */
-#VOLUNTARIO-SECAO {
-  gap: 60px;
-}
+  .doacao-subtitulo,
+  .doacao-texto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.Voluntario-section h2 {
-  font-size: 68px;
-}
+  /* ── VOLUNTARIADO ── */
+  #VOLUNTARIO-SECAO {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 6%;
+    gap: 60px;
+  }
 
-.photocard {
-  width: 250px;
-}
+  .Voluntario-section {
+    max-width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
 
-  /* ==================================== QUINTA SEÇÃO */
+  .photocard-container {
+    margin-top: 0;
+  }
+
+  /* ── QUINTA SEÇÃO — COMO AJUDAR ── */
   .ajudar-titulo {
-    font-size: 70px;
+    font-size: 60px;
   }
 
+  .ajudar-descricao {
+    font-size: 17px;
+  }
 
+  .ajudar-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
 
-
-  /* ==================================== SEXTA SEÇÃO */
+  /* ── SEXTA SEÇÃO — CONTATO ── */
   .contact-section {
-    gap: 80px !important;
+    gap: 20px !important;
+    padding: 60px 4%;
+    justify-content: center;
+    margin-top: -60px; /* negativo = sobe / positivo = desce */
+  }
+
+  .contact-info h1 {
+    font-size: 3rem;
+  }
+
+  .contact-card {
+    width: 340px;
+    min-width: 340px;
   }
 }
 
+/* ================================================================
+                              MOBILE  ·  até 480px
+   ================================================================ */
+@media (max-width: 480px) {
 
-/* ────────────────────────────────────────────────────────────────
-   
-    RESPONSIVO PARA TABLET NORMAL (≤ 900px)
-   
-    ──────────────────────────────────────────────────────────────── */
-@media (max-width: 900px) {
-
-  /* NAV — links escondidos, hamburguer aparece */
+  /* ── NAVEGAÇÃO / HAMBURGER ── */
   .nav {
     padding: 20px 5%;
     position: relative;
@@ -165,437 +326,186 @@
     width: 100%;
   }
 
-  /* PRIMEIRA SEÇÃO — empilha */
+  /* ── HERO ── */
   .container {
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 80px 32px 40px 32px;
+    flex-direction: column;
     gap: 40px;
+    padding: 90px 24px 50px;
     text-align: center;
     min-height: auto;
   }
 
-  .hero-left {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .logo-text {
-    font-size: 72px;
-    letter-spacing: -3px;
+    font-size: 64px;
+    letter-spacing: -2px;
   }
 
   .linha {
     width: 100%;
-    max-width: 400px;
+    margin: 20px 0;
   }
 
   .titulo {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .descricao {
-    font-size: 17px;
-    max-width: 480px;
+    font-size: 15px;
+    line-height: 1.5;
   }
 
   .card {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
 
-  /* SEGUNDA SEÇÃO */
+  .card-content {
+    padding: 24px;
+  }
+
+  /* ── SEGUNDA SEÇÃO — VALORES ── */
   .valores-titulo {
-    font-size: 60px;
+    font-size: 44px;
+    margin-bottom: 28px;
     letter-spacing: -1px;
   }
 
   .valores-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
   }
 
-  /* TERCEIRA SEÇÃO */
+  .valor-content {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .valor-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .valor-content p {
+    font-size: 0.88rem;
+  }
+
+  .icone-valor {
+    width: 24px;
+  }
+
+  /* ── TERCEIRA SEÇÃO — SERVIÇOS ── */
   .servicos-section {
-    padding: 60px 8%;
+    padding: 48px 5% 60px;
   }
 
   .servicos-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 36px;
   }
 
   .servicos-titulo {
-    font-size: 70px;
+    font-size: 56px;
     letter-spacing: -2px;
+    margin-bottom: 20px;
   }
 
   .servicos-descricao {
-    font-size: 18px;
-    max-width: 100%;
-  }
-
-  /* QUARTA SEÇÃO */
-  .quarta-secao {
-    padding: 60px 6%;
-  }
-
-  .quarta-secao-inner {
-    gap: 80px;
-  }
-
-  .categorias-lista-col {
-    width: 100%;
-  }
-
-  .categoria-item {
-    width: 100%;
-    height: 160px;
-  }
-
-  .categoria-item span {
-    font-size: 40px;
-  }
-
-  /* VOLUNTARIADO */
-#VOLUNTARIO-SECAO {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 60px;
-  padding: 60px 6%;
-}
-
-.Voluntario-section {
-  max-width: 100%;
-  text-align: center;
-  margin-left: 0;
-}
-
-.Voluntario-section h2 {
-  font-size: 60px;
-  letter-spacing: -2px;
-}
-
-.Voluntario-section .voluntariado-subtitulo {
-  font-size: 21px;
-}
-
-.Voluntario-section p:not(.voluntariado-subtitulo) {
-  font-size: 17px;
-}
-
-.photocard-container {
-  margin-top: 0;
-}
-
-.btn-voluntario {
-  margin-top: 10px;
-}
-
-  /* QUINTA SEÇÃO */
-  .ajudar-titulo {
-    font-size: 52px;
-    letter-spacing: -2px;
-  }
-
-  .ajudar-descricao {
-    font-size: 17px;
-  }
-
-  .ajudar-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    max-width: 480px;
-  }
-
-  /* SEXTA SEÇÃO */
-  .contact-section {
-    flex-direction: column !important;
-    padding: 40px 24px !important;
-    gap: 40px !important;
-  }
-
-  .contact-info {
-    max-width: 100% !important;
-  }
-
-  .contact-card {
-    width: 100%;
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 36px 28px;
-  }
-}
-
-
-/* ────────────────────────────────────────────────────────────────
-   
-    RESPONSIVO PARA MOBILE  (≤ 600px)
-   
-    ──────────────────────────────────────────────────────────────── */
-
-@media (max-width: 600px) {
-
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    text-align: center;
-  }
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-  }
-
-  section,
-  .container,
-  .valores-section,
-  .servicos-section,
-  .quarta-secao,
-  #VOLUNTARIO-SECAO,
-  .ajudar-section,
-  .contact-info,
-  footer {
-    text-align: center;
-  }
-
-  .container,
-  .quarta-secao-inner,
-  #VOLUNTARIO-SECAO,
-  .categorias-lista-col,
-  .valores-grid,
-  .ajudar-grid,
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logo-text,
-  .titulo,
-  .descricao,
-  .valores-titulo,
-  .servicos-titulo,
-  .servicos-descricao,
-  .loja-titulo,
-  .loja-descricao,
-  .doacao-titulo,
-  .doacao-subtitulo,
-  .doacao-texto,
-  .Voluntario-section h2,
-  .Voluntario-section .voluntariado-subtitulo,
-  .Voluntario-section p,
-  .ajudar-titulo,
-  .ajudar-descricao,
-  .contact-info h1 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* PRIMEIRA SEÇÃO */
-  .container {
-    padding: 70px 20px 32px 20px;
-    gap: 28px;
-  }
-
-  .logo-text {
-    font-size: 52px;
-    letter-spacing: -2px;
-  }
-
-  .titulo {
-    font-size: 18px;
-  }
-
-  .descricao {
     font-size: 15px;
-  }
-
-  .card {
-    width: 220px;
-    height: 220px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .card-content {
-    padding: 24px;
-    text-align: center;
-  }
-
-  /* SEGUNDA SEÇÃO */
-  .valores-section {
-    padding: 40px 16px;
-  }
-
-  .valores-titulo {
-    font-size: 38px;
-    letter-spacing: 0;
-    margin-bottom: 28px;
-  }
-
-  .valores-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-    width: 100%;
-    max-width: 430px;
-    margin: 0 auto;
-    justify-items: center;
-  }
-
-  .valor-content {
-    padding: 16px;
-    min-height: auto;
-    text-align: center;
-  }
-
-  .valor-content h3 {
-    font-size: 1rem;
-    margin-bottom: 6px;
-    text-align: center;
-  }
-
-  .valor-content p {
-    font-size: 0.85rem;
-    text-align: center;
-  }
-
-  /* TERCEIRA SEÇÃO */
-  .servicos-section {
-    padding: 40px 5%;
-  }
-
-  .servicos-titulo {
-    font-size: 52px;
-    letter-spacing: -2px;
-    margin-bottom: 24px;
-  }
-
-  .servicos-descricao {
-    font-size: 16px;
+    max-width: 100%;
   }
 
   .servico-item {
     height: auto;
-    min-height: 60px;
-    padding: 14px 24px;
+    min-height: 64px;
     border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    padding: 14px 20px;
   }
 
   .servico-item p {
-    font-size: 14px;
-    white-space: normal;
-    text-align: center;
+    font-size: 13px;
+    line-height: 1.4;
   }
 
-  /* QUARTA SEÇÃO */
-  .quarta-secao {
-    padding: 40px 5%;
+  /* ── MARQUEE ── */
+  .marquee-content span {
+    font-size: 15px;
+  }
+
+  /* ── QUARTA SEÇÃO — LOJA / BAZAR ── */
+  #QUARTA-SECAO {
+    padding: 48px 5%;
   }
 
   .quarta-secao-inner {
-    gap: 60px;
-    width: 100%;
+    gap: 64px;
   }
 
-  .loja-titulo {
-    font-size: 52px !important;
-    letter-spacing: -3px;
+  .linha-loja {
+    flex-direction: column;
+    gap: 32px;
   }
 
-  .loja-descricao {
-    font-size: 15px !important;
+  .bazar-carousel {
+    height: 220px;
   }
 
-  .btn-loja,
-  .btn-doacao {
-    padding: 14px 32px;
-    font-size: 15px;
-    width: 100%;
-    max-width: 320px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .bazar-slide span {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .bazar-carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
   }
 
   .doacao-titulo {
     font-size: 48px;
     letter-spacing: -2px;
+    margin-bottom: 24px;
+    text-align: center;
   }
 
   .doacao-subtitulo {
     font-size: 17px;
+    text-align: center;
   }
 
   .doacao-texto {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .doacao-info-col {
+    text-align: center;
+  }
+
+  .btn-doacao,
+  .btn-loja {
+    padding: 14px 32px;
     font-size: 15px;
   }
 
-  .categorias-lista-col {
-    width: 100%;
-  }
-
-  .categoria-item {
-    width: 100%;
-    max-width: 360px;
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .categoria-item span {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  /* MARQUEE */
-  .marquee-content span {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .bazar-carousel-btn-prev {
-    left: 10px;
-  }
-
-  .bazar-carousel-btn-next {
-    right: 10px;
-  }
-
-  .bazar-carousel-btn {
-    z-index: 30;
-    pointer-events: auto;
-    display: none;
-  }
-
-  /* VOLUNTARIADO */
+  /* ── VOLUNTARIADO ── */
   #VOLUNTARIO-SECAO {
-    padding: 40px 5%;
-    gap: 45px;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 5%;
+    gap: 48px;
+    min-height: auto;
   }
 
   .Voluntario-section {
+    max-width: 100%;
+    margin-left: 0;
     text-align: center;
   }
 
   .Voluntario-section h2 {
     font-size: 44px;
     letter-spacing: -2px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 
   .Voluntario-section .voluntariado-subtitulo {
@@ -603,41 +513,30 @@
   }
 
   .Voluntario-section p:not(.voluntariado-subtitulo) {
-    font-size: 15px;
-    margin-bottom: 30px;
+    font-size: 14px;
+    margin-bottom: 32px;
   }
 
   .btn-voluntario {
     padding: 14px 32px;
     font-size: 15px;
-    width: 100%;
-    max-width: 320px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
-  .photocard {
-    width: 220px;
-    margin-left: auto;
-    margin-right: auto;
+  .photocard-container {
+    margin-top: 0;
+    transform: scale(0.85);
+    transform-origin: top center;
   }
 
-  .photocard-pessoas {
-    margin-top: -25px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* QUINTA SEÇÃO */
+  /* ── QUINTA SEÇÃO — COMO AJUDAR ── */
   .ajudar-section {
-    padding: 40px 5%;
+    padding: 48px 5%;
   }
 
   .ajudar-titulo {
-    font-size: 38px;
-    letter-spacing: -1px;
+    font-size: 44px;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
   }
 
   .ajudar-descricao {
@@ -645,116 +544,87 @@
     margin-bottom: 40px;
   }
 
-  .ajudar-card {
-  width: 100%;
-  max-width: 220px;
-  min-height: 130px;
-  padding: 20px 16px;
-  box-shadow: 6px 6px 0px #111;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  .ajudar-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .ajudar-card {
+    padding: 28px 20px;
+    min-height: auto;
+    box-shadow: 6px 6px 0 #111;
+  }
 
   .ajudar-card h3 {
-    font-size: 18px;
-    margin-bottom: 12px;
-    text-align: center;
+    font-size: 20px;
+    margin-bottom: 14px;
   }
 
   .ajudar-card p {
     font-size: 15px;
-    line-height: 1.4;
-    text-align: center;
   }
 
-  /* SEXTA SEÇÃO */
+  /* ── SEXTA SEÇÃO — CONTATO ── */
+  .contact-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 48px 5%;
+  }
+
+  .contact-info {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .contact-info h1 {
-    font-size: 2.2rem !important;
+    font-size: 2.4rem;
     margin-bottom: 24px;
   }
 
   .contact-card {
     width: 100%;
-    max-width: 100%;
-    padding: 24px 16px;
-    border-radius: 18px;
-    box-shadow: 5px 5px 0 #1a1a1a;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    padding: 24px 20px;
+    border-radius: 20px;
   }
 
   .contact-card input,
   .contact-card textarea {
-    padding: 11px 14px;
     font-size: 0.85rem;
-    text-align: center;
+    padding: 12px 14px;
   }
 
   .contact-card button {
-    padding: 12px;
+    padding: 13px;
     font-size: 0.88rem;
-    text-align: center;
   }
 
-  /* FOOTER */
+  .info-list li {
+    font-size: 0.88rem;
+    gap: 10px;
+  }
+
+  .info-list .icon {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+  }
+
+  /* ── ANÚNCIOS ── */
+  .ad-wrapper {
+    padding: 24px 5% 0;
+  }
+
+  .ad-leaderboard {
+    min-height: 72px;
+    padding: 10px 16px;
+    border-radius: 14px;
+  }
+
+  /* ── FOOTER ── */
   footer {
-    padding: 18px 20px;
-    font-size: 0.75rem;
-  }
-}
-
-
-/* ────────────────────────────────────────────────────────────────
-
-   RESPONSIVO PARA MOBILE PEQUENO  (≤ 380px)
-
-   ──────────────────────────────────────────────────────────────── */
-
-@media (max-width: 380px) {
-
-  .logo-text {
-    font-size: 42px;
-  }
-
-  .valores-titulo {
-    font-size: 30px;
-  }
-
-  .servicos-titulo {
-    font-size: 40px;
-  }
-
-  .ajudar-titulo {
-    font-size: 30px;
-  }
-
-  .card {
-    width: 180px;
-    height: 180px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* VOLUNTARIADO */
-  .Voluntario-section h2 {
-    font-size: 36px;
-  }
-
-  .photocard {
-    width: 190px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .photocard-pessoas {
-    margin-left: auto;
-    margin-right: auto;
+    padding: 20px 24px;
+    font-size: 0.78rem;
   }
 }
