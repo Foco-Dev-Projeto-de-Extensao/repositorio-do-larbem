@@ -179,21 +179,6 @@ Se você utiliza o **VS Code**, pode rodar o projeto com recarregamento automát
         <td align="center"><a href="https://www.linkedin.com/in/mozart-moura/">LinkedIn</a></td>
         <td align="center"><img src="https://avatars.githubusercontent.com/u/207468370?v=4" width="60" style="border-radius: 50%;"></td>
       </tr>
-      <tr>
-        <td align="center"><b>00000851337</b></td>
-        <td align="center">Marcos Vinicius</td>
-        <td align="center"><a href="https://github.com/Marcosbd8204">Marcosbd8204</a></td>
-        <td align="center">LinkedIn</td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/83377302?v=4" width="60" style="border-radius: 50%;"></td>
-      </tr>
-      <tr>
-        <td align="center"><b>00000860561</b></td>
-        <td align="center">Diego Souza</td>
-        <td align="center"><a href="https://github.com/DiegoSouzaTech">DiegoSouzaTech</a></td>
-        <td align="center">LinkedIn</td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/206262818?v=4" width="60" style="border-radius: 50%;"></td>
-      </tr>
     </tbody>
   </table>
 </p>
-
