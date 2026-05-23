@@ -157,7 +157,6 @@ Se você utiliza o **VS Code**, pode rodar o projeto com recarregamento automát
   <table align="center">
     <thead>
       <tr>
-        <th align="center">MATRÍCULA</th>
         <th align="center">NOME E SOBRENOME</th>
         <th align="center">GITHUB</th>
         <th align="center">LINKEDIN</th>
@@ -166,14 +165,12 @@ Se você utiliza o **VS Code**, pode rodar o projeto com recarregamento automát
     </thead>
     <tbody>
       <tr>
-        <td align="center"><b>00000859509</b></td>
         <td align="center">Amanda Aziz</td>
         <td align="center"><a href="https://github.com/Amanda-Aziz">Amanda-Aziz</a></td>
         <td align="center"><a href="https://www.linkedin.com/in/amanda-aziz-30a30p/">LinkedIn</a></td>
         <td align="center"><img src="https://avatars.githubusercontent.com/u/142847924?v=4" width="60" style="border-radius: 50%;"></td>
       </tr>
       <tr>
-        <td align="center"><b>00000861020</b></td>
         <td align="center">Mozart Moura</td>
         <td align="center"><a href="https://github.com/mozartDemarias">mozartDemarias</a></td>
         <td align="center"><a href="https://www.linkedin.com/in/mozart-moura/">LinkedIn</a></td>
