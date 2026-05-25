@@ -121,7 +121,7 @@ A interface foi projetada com foco em acessibilidade e modernidade, utilizando o
 │   │   ├── index.js          # Lógica geral da página principal
 │   │   └── resp-hm.js        # Controle do menu hambúrguer responsivo
 │   └── index.html            # Página principal do site institucional
-├── LICENSE                   # Licença jurídica do software livre (GNU GPLv3)
+├── LICENSE                   # Licença Apache License 2.0
 └── README.md                 # Guia de introdução e documentação do repositório
 ```
 
