@@ -637,21 +637,24 @@ header {
 
 /* ========== VOLUNTARIADO ========== */
 #VOLUNTARIO-SECAO {
-    width: 100%;
-    min-height: 550px; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 60px 10%; 
-    box-sizing: border-box;
-    gap: 40px; 
+  width: 100%;
+  max-width: 1300px;
+  min-height: 550px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 620px 420px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+  box-sizing: border-box;
+  gap: 80px;
 }
 
 .Voluntario-section {
-    max-width: 550px; 
-    text-align: left; 
-    color: #ffffff; 
-    margin-left: 0px;
+  max-width: 550px;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 0;
 }
 
 .Voluntario-section h2 {

@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
  var data = [
     { src: "imagens/roupa.jpg", alt: "Roupas", label: "roupas" },
     { src: "imagens/tenis.jpg", alt: "Calçados", label: "calçados" },
-    { src: "imagens/acessorio.jpg", alt: "Acessórios", label: "acessorios" },
     { src: "imagens/brinquedo.jpg", alt: "Brinquedos", label: "brinquedos" }
   ];
 

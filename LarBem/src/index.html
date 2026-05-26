@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </div>
 
-<!-- ====================================================== QUARTA SEÇÃO DO SITE - LOJA E BAZAR =============================================== -->
+<!-- ================================================= QUARTA SEÇÃO DO SITE - VOLUNTARIO E BAZAR =============================================== -->
 
 <!-- FAIXA ANIMADA (MARQUEE) — divisória entre Serviços e Quarta Seção -->
 <div class="marquee">
@@ -249,11 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div id="QUARTA-SECAO" style="padding-top: 40px;">
-
-
-
-
+<div id="QUARTA-SECAO">
 
 <section class="quarta-secao">
   <div class="quarta-secao-inner">
@@ -269,17 +265,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span>roupas</span>
               </div>
               <div class="bazar-slide">
-                <img src="assests/imagens/ITENS/tenis.jpg" alt="Sapatos">
+                <img src="assests/imagens/ITENS/sapatos.jpg" alt="Sapatos">
                 <span>sapatos</span>
-              </div>
-              <div class="bazar-slide">
-                <img src="assests/imagens/ITENS/acessorio.jpg" alt="Acessórios">
-                <span>acessorios</span>
               </div>
               <div class="bazar-slide">
                 <img src="assests/imagens/ITENS/brinquedo.jpg" alt="Brinquedos">
                 <span>brinquedos</span>
               </div>
+              <div class="bazar-slide">
+                <img src="assests/imagens/ITENS/bazar-mesa.jpg" alt="Brinquedos">
+                <span>E muito <br>mais!</span>
+              </div>
+
             </div>
           </div>
           <button class="bazar-carousel-btn bazar-carousel-btn-prev" data-bazar-prev>&#8249;</button>
@@ -287,23 +284,28 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </div>
 
-  <div class="linha-bazar">
-    <div class="doacao-info-col">
-      <h2 class="doacao-titulo"><span>Doe</span> para<br>o Bazar!</h2>
-      <p class="doacao-subtitulo">
-        Contribua com roupas em bom estado para o nosso bazar solidário.
-      </p>
-      <p class="doacao-texto">
-        Escolha os itens que não utiliza mais, garantindo que estejam limpos,
-        conservados e em condições de uso, e entre em contato conosco para realizar a doação.
-      </p>
-      <a href="https://wa.me/558132250151?text=Ol%C3%A1%2C+gostaria+de+fazer+uma+doa%C3%A7%C3%A3o+para+o+bazar+do+Lar+Bem!" target="_blank" rel="noopener noreferrer" class="btn-doacao">Faça sua Doação</a>
-  </div>
+    <div class="linha-bazar">
+      <div class="doacao-info-col">
+        <h2 class="doacao-titulo">Temos um <br>Bazar<span>!</span><br></h2>
+        <p class="doacao-subtitulo">
+          Descubra nosso espaço e ajude com suas doações.
+        </p>
+        <p class="doacao-texto">
+          Aqui você encontra roupas, calçados e acessórios com preços super acessíveis. Além de garimpar, 
+          você também pode nos ajudar: escolha itens que não utiliza mais, garantindo que estejam limpos, 
+          conservados e em condições de uso, e entre em contato conosco para realizar a doação.
+        </p>
+        <a href="https://wa.me/558132250151?text=Ol%C3%A1%2C+gostaria+de+fazer+uma+doa%C3%A7%C3%A3o+para+o+bazar+do+Lar+Bem!" target="_blank" rel="noopener noreferrer" class="btn-doacao">Saiba Mais</a>
+      </div>
     </div>
-    <script src="js/carrossel.js"></script>
-
-
+  <script src="js/carrossel.js"></script>
 </section>
+
+
+<section>
+  <img href="assests/imagens/ITENS/mural.jpg">
+</section>
+
 
   <div id="VOLUNTARIO-SECAO">
 
@@ -341,14 +343,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-</div>
-
-
   </div>
 
-
-
-
+  </div>
 
 </div>
 
@@ -359,8 +356,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <span>Acolhimento, cuidado, proteção, carinho e um lugar seguro para crescer ㆍ LARBEM ㆍ Acolhimento, cuidado, proteção, carinho e um lugar seguro para crescer ㆍ LARBEM ㆍ</span>
   </div>
 </div>
-
-
 
 
 <!-- ========================================================== QUINTA SEÇÃO DO SITE =========================================================== -->
@@ -408,10 +403,9 @@ function copiarCNPJ() {
     </div>
   </div>
 
-  
-
 </section>
 </div>
+
 
 <!-- =============================================== SEXTA SEÇÃO DO SITE + CSS ======================================= -->
 
@@ -446,7 +440,7 @@ function copiarCNPJ() {
 
     .contact-card {
       border: 3px solid #111;
-      background: #f9c8d8;
+      background: #ffd5e3;
       border-radius: 28px;
       padding: 36px 32px;
       width: 340px;
@@ -635,12 +629,12 @@ function copiarCNPJ() {
     /* ── RESPONSIVE ───────────────────────────────── */
     @media (max-width: 720px) {
       .contact-section {
-        flex-direction: column;
-        padding: 40px 24px;
-        gap: 40px;
-      }
-      .contact-card { width: 100%; }
-    }
+      flex-direction: column;
+      padding: 90px 24px 48px 24px; /* topo aumentado */
+      gap: 40px;
+  }
+  .contact-card { width: 100%; }
+}
 
 </style>
 

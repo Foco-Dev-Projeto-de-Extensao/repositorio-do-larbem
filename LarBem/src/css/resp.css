@@ -177,6 +177,10 @@
     gap: 48px;
   }
 
+  .bazar-carousel-btn {
+  display: none;
+  }
+
   .bazar-carousel {
     height: 300px;
   }
@@ -197,8 +201,9 @@
 
   /* ── VOLUNTARIADO ── */
   #VOLUNTARIO-SECAO {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    max-width: 100%;
     padding: 60px 6%;
     gap: 60px;
   }
@@ -206,7 +211,7 @@
   .Voluntario-section {
     max-width: 100%;
     text-align: center;
-    margin-left: 0;
+    margin: 0 auto;
   }
 
   .photocard-container {
@@ -419,7 +424,7 @@
     font-size: 15px;
   }
 
-  /* ── QUARTA SEÇÃO — LOJA / BAZAR ── */
+  /* ── QUARTA SEÇÃO — voluntario / BAZAR ── */
   #QUARTA-SECAO {
     padding: 48px 5%;
   }
@@ -435,6 +440,10 @@
 
   .bazar-carousel {
     height: 220px;
+  } 
+
+  .bazar-carousel-btn {
+  display: none;
   }
 
   .bazar-slide span {
@@ -557,7 +566,7 @@
   .contact-section {
     flex-direction: column;
     gap: 40px;
-    padding: 48px 5%;
+    padding: 150px 5% 48px 5%; /* topo direita baixo esquerda */
   }
 
   .contact-info {
