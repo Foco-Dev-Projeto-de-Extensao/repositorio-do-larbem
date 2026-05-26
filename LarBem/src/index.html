@@ -152,26 +152,26 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
 
-    </div>    <!-- FIM DA PARTE DOS CARDS COM OS VALORES -->
+  </div>    <!-- FIM DA PARTE DOS CARDS COM OS VALORES -->
 
-    <script>
-      const observerOptions = {
-        threshold: 0.1 // Ativa quando 10% do card aparece
-      };
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('aparecer');
-          }
-        });
-      }, observerOptions);
-      // Seleciona todos os cards de valor
-      document.querySelectorAll('.valor-content').forEach((card) => {
-        observer.observe(card);
+  <script>
+    const observerOptions = {
+      threshold: 0.1 // Ativa quando 10% do card aparece
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('aparecer');
+        }
       });
-      </script>
+    }, observerOptions);
+    // Seleciona todos os cards de valor
+    document.querySelectorAll('.valor-content').forEach((card) => {
+      observer.observe(card);
+    });
+    </script>
 
-  </div>
+</div>
 
 
 </section>
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- Lado Direito: Lista de Cards -->
     <div class="servicos-lista">        <!-- essa parte do java é pro botao nao executar ação nenhuma do clique -->
   <a href="javascript:void(0)" class="servico-item">
-    <p>Garantimos um lar seguro, alimentação e cuidados dignos 24 horas.</p>
+    <p>Garantimos um lar seguro, alimentação e cuidados dignos 24 horas por dia.</p>
   </a>
 
   <a href="javascript:void(0)" class="servico-item">
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </div>
 
-<!-- ================================================== QUARTA SEÇÃO DO SITE - VOLUNTARIO E BAZAR ============================================= -->
+<!-- ====================================================== QUARTA SEÇÃO DO SITE - LOJA E BAZAR =============================================== -->
 
 <!-- FAIXA ANIMADA (MARQUEE) — divisória entre Serviços e Quarta Seção -->
 <div class="marquee">
@@ -251,31 +251,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div id="QUARTA-SECAO" style="padding-top: 40px;">
 
-<!-- ╔══════════════════════════════════════════════════════════════╗
-     ║  BLOCO DE ANÚNCIO 1 — Banner Leaderboard (após Serviços)   ║
-     ║  Substitua o conteúdo interno pelo seu script do AdSense   ║
-     ╚══════════════════════════════════════════════════════════════╝ -->
-<div class="ad-wrapper" style="padding-bottom: 48px;">
-  <div class="ad-container ad-leaderboard">
-    <span class="ad-label">Publicidade</span>
 
-    <!-- ▼▼▼ COLE AQUI O SCRIPT DO GOOGLE ADSENSE ▼▼▼ -->
-    <!-- Exemplo:
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-         data-ad-slot="XXXXXXXXXX"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    -->
-    <div class="ad-placeholder">
-      <p>Seu anúncio aqui · 728 × 90</p>
-    </div>
-    <!-- ▲▲▲ FIM DO BLOCO DE ANÚNCIO ▲▲▲ -->
 
-  </div>
-</div>
+
 
 <section class="quarta-secao">
   <div class="quarta-secao-inner">
@@ -382,30 +360,8 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<!-- ╔══════════════════════════════════════════════════════════════╗
-     ║  BLOCO DE ANÚNCIO 2 — Banner Leaderboard (após Voluntário) ║
-     ╚══════════════════════════════════════════════════════════════╝ -->
-<div class="ad-wrapper">
-  <div class="ad-container ad-leaderboard">
-    <span class="ad-label">Publicidade</span>
 
-    <!-- ▼▼▼ COLE AQUI O SCRIPT DO GOOGLE ADSENSE ▼▼▼ -->
-    <!-- Exemplo:
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-         data-ad-slot="XXXXXXXXXX"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    -->
-    <div class="ad-placeholder">
-      <p>Seu anúncio aqui · 728 × 90</p>
-    </div>
-    <!-- ▲▲▲ FIM DO BLOCO DE ANÚNCIO ▲▲▲ -->
 
-  </div>
-</div>
 
 <!-- ========================================================== QUINTA SEÇÃO DO SITE =========================================================== -->
 
@@ -452,32 +408,7 @@ function copiarCNPJ() {
     </div>
   </div>
 
-  <!-- ╔══════════════════════════════════════════════════════════════╗
-       ║  BLOCO DE ANÚNCIO 3 — Google AdSense (após Como Ajudar)   ║
-       ║  Cole abaixo o script gerado pelo Google AdSense          ║
-       ╚══════════════════════════════════════════════════════════════╝ -->
-  <div class="ad-wrapper" style="margin: 48px auto;">
-    <div class="ad-container ad-leaderboard">
-      <span class="ad-label">Publicidade</span>
-
-      <!-- ▼▼▼ COLE AQUI O SCRIPT DO GOOGLE ADSENSE ▼▼▼ -->
-      <!-- Exemplo:
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-           data-ad-slot="XXXXXXXXXX"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      -->
-      <div class="ad-placeholder">
-        <p>Seu anúncio aqui · 728 × 90</p>
-      </div>
-      <!-- ▲▲▲ FIM DO BLOCO DE ANÚNCIO ▲▲▲ -->
-
-    </div>
-  </div>
-  <!-- ▲▲▲ FIM DO BLOCO ADSENSE ▲▲▲ -->
+  
 
 </section>
 </div>
