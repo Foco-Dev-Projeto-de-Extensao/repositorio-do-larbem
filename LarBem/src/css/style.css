@@ -27,6 +27,12 @@ h1,h2,h3,h4 {
   cursor: default;
 }
 
+/* FORÇAR TEMA CLARO DO SITE MESMO QUE U USUARIO PONHA MODO ESCURO*/
+:root{
+  color-scheme: light;
+}
+
+
 #SEGUNDA-SECAO {
   scroll-margin-top: 80px; 
 }
@@ -43,6 +49,20 @@ h1,h2,h3,h4 {
   scroll-margin-top: 80px; 
 }
 
+/* ================================================================
+   ALINHAMENTO GLOBAL — padding lateral uniforme no desktop
+   Todas as seções respeitam a mesma margem lateral de 10%
+   ================================================================ */
+
+.contact-section {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.ad-wrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 /* ============================================================== PRIMEIRA SEÇÃO =============================================================== */
 
@@ -89,17 +109,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: center; 
-  min-height: 100vh;
-  width: 100%; /* Garante que ocupa toda a largura */
-  margin: 0;   /* Remove o auto que centraliza */
-  padding: 80px 60px 0 60px;
+  min-height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 250px 60px 100px 60px;
+/*          ^  quanto maior, mais desce */
   gap: 120px; 
 }
 
 
 .hero-left {
-  flex: 0 1 auto; /* Impede que o texto empurre o card */
-  max-width: 600px; /* Limita a largura do texto para ele não encostar no card */
+  flex: 0 1 auto; 
+  max-width: 600px; 
 }
 
 .logo-text {
@@ -191,23 +212,23 @@ header {
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 30px; /* Reduzido de 40px */
+    width: 30px; 
     height: auto;
 }
 
 .valores-section {
   width: 100%;
-  padding: 40px 20px; /* Padding menor em cima/baixo e nas laterais */
+  padding: 40px 20px; 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .valores-titulo {
-  font-size: 100px; /* Reduzido de 110px */
+  font-size: 100px;
   font-weight: 800;
   letter-spacing: -2px;
-  margin-bottom: 40px; /* Reduzido de 60px */
+  margin-bottom: 40px; 
   width: 100%;
   max-width: 1100px;
   text-align: center;
@@ -226,16 +247,16 @@ header {
 }
 
 .valor-content {
-  border-radius: 25px; /* Levemente menor */
+  border-radius: 25px; 
   background: #f8f4eb;
   border: 3px solid #111;
   padding: 25px;
-  height: auto; /*  250px para auto para o card se ajustar ao texto */
-  min-height: 180px; /* Define uma altura mínima menor que os 250px anteriores */
+  height: auto; 
+  min-height: 180px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 6px 6px 0px #111; /* Sombra levemente menor */
+  box-shadow: 6px 6px 0px #111; 
   position: relative;
   opacity: 0;
   transform: translateY(50px);  
@@ -243,7 +264,7 @@ header {
 }
 
 .valor-content p {
-  font-size: 0.95rem; /* Fonte um pouco menor para economizar espaço */
+  font-size: 0.95rem; 
   line-height: 1.4;
 }
 
@@ -323,7 +344,7 @@ header {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Espaçamento entre os cards cor behe */
+  gap: 20px; /* Espaçamento entre os cards cor bege */
 }
 
 .servico-item {
@@ -392,7 +413,6 @@ header {
 }
 
 
-
 /* ================================================================ QUARTA SEÇÃO ============================================================== */
 
 /* FAIXA ANIMADA */
@@ -439,7 +459,7 @@ header {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 230px;                  /* MUDAR AQUI SE QUISER AUMENTAR A DISTANCIA ENTRE AS SEÇÕES DA LOJA E DO BAZAR... */
+  gap: 230px;  /* MUDAR AQUI SE QUISER AUMENTAR A DISTANCIA ENTRE AS SEÇÕES DA LOJA E DO BAZAR... */
 }
 
 /* === LINHA 1: CARROSSEL === */
@@ -614,42 +634,15 @@ header {
 .bazar-carousel-btn-prev { left: 14px; }
 .bazar-carousel-btn-next { right: 14px; }
 
-/* === RESPONSIVO === */
-@media (max-width: 900px) {
-  .linha-loja,
-  .linha-bazar {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .doacao-info-col {
-    text-align: center;
-  }
-  .doacao-subtitulo,
-  .doacao-texto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bazar-carousel {
-    height: 260px;
-  }
-}
-@media (max-width: 600px) {
-  .bazar-carousel { height: 200px; }
-  .bazar-slide span { font-size: 36px; }
-  .categoria-item span { font-size: 32px; }
-  .doacao-titulo { font-size: 52px; }
-}
-
 
 /* ========== VOLUNTARIADO ========== */
 #VOLUNTARIO-SECAO {
     width: 100%;
     min-height: 550px; 
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center; 
-    padding: 60px 8%; 
+    padding: 60px 10%; 
     box-sizing: border-box;
     gap: 40px; 
 }
@@ -658,7 +651,7 @@ header {
     max-width: 550px; 
     text-align: left; 
     color: #ffffff; 
-    margin-left: -80px;
+    margin-left: 0px;
 }
 
 .Voluntario-section h2 {
@@ -777,6 +770,8 @@ header {
 /* CONTEÚDO DA SEÇÃO */
 .ajudar-section {
   padding: 80px 10%;
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: center;
 }
 
@@ -814,7 +809,7 @@ header {
 }
 
 .ajudar-card {
-  background-color: #ffdefb;  /*original: ffbdf7*/
+  background-color: #ffdefb;
   border: 3px solid #111;
   border-radius: 20px;
   padding: 40px 20px;
@@ -852,7 +847,7 @@ header {
 }
 
 
-/* ================================================================ SEXTA SEÇÃO ==================================== */
+/* ================================================================ SEXTA SEÇÃO =============================================================== */
 
 /* FOOTER  */
 footer {
@@ -862,7 +857,8 @@ footer {
   font-size: 0.82rem;
   color: #2c2b2b;      /*original #555*/
   line-height: 1.7;
-  background-color: whitesmoke; 
+  background-color: whitesmoke;
+   
 }
 
 /* ================================================================
