@@ -22,17 +22,10 @@
   display: none;
 }
 
-
 /* ================================================================
                                 TABLET  ·  até 1024px
    ================================================================ */
 @media (max-width: 1024px) {
-
-  #cursor-bolinha {
-    display: none; /* some em tablet e mobile */
-  }
-
-
 
   /* ── NAVEGAÇÃO ── */
   .nav {

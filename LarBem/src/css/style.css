@@ -50,21 +50,6 @@ h1,h2,h3,h4 {
 }
 
 
-/* C U R S O R - B O L I N H A */
-
-#cursor-bolinha {
-  width: 20px;
-  height: 20px;
-  background: #ff00bb;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none; /* não interfere nos cliques */
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease, opacity 0.3s ease;
-  mix-blend-mode: multiply; /* efeito legal sobre fundos coloridos */
-}
-
 
 
 /* ================================================================
