@@ -27,10 +27,6 @@ h1,h2,h3,h4 {
   cursor: default;
 }
 
-/* FORÇAR TEMA CLARO DO SITE MESMO QUE U USUARIO PONHA MODO ESCURO*/
-:root{
-  color-scheme: light;
-}
 
 
 #SEGUNDA-SECAO {
@@ -656,7 +652,7 @@ header {
 .Voluntario-section {
   max-width: 550px;
   text-align: left;
-  color: #ffffff;
+  color: #000000;
   margin-left: 0;
 }
 
