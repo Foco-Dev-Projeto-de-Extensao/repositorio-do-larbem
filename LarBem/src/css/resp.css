@@ -28,6 +28,12 @@
    ================================================================ */
 @media (max-width: 1024px) {
 
+  #cursor-bolinha {
+    display: none; /* some em tablet e mobile */
+  }
+
+
+
   /* ── NAVEGAÇÃO ── */
   .nav {
     padding: 20px 5%;
