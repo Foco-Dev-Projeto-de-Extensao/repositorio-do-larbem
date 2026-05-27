@@ -22,6 +22,44 @@
   display: none;
 }
 
+
+
+/* ===================================== MACBOOK AIR / TELAS MÉDIAS ===== */
+@media (max-width: 1280px) {
+
+  #QUARTA-SECAO {
+    padding: 60px 5%;
+  }
+
+  .linha-loja {
+    gap: 40px; /* reduz o espaço entre carrossel e texto */
+  }
+
+  .bazar-carousel {
+    height: 320px;
+  }
+
+  .doacao-titulo {
+    font-size: clamp(48px, 5vw, 80px);
+    letter-spacing: -3px;
+  }
+
+  .doacao-subtitulo {
+    font-size: 18px;
+  }
+
+  .doacao-texto {
+    font-size: 15px;
+  }
+
+  .quarta-secao-inner {
+    gap: 80px;
+  }
+}
+
+
+
+
 /* ================================================================
                                 TABLET  ·  até 1024px
    ================================================================ */
