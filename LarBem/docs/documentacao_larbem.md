@@ -2,15 +2,18 @@
 <h1>IDENTIFICAÇÃO DA INICIATIVA DE EXTENSÃO</h1>
 </div>
 
-**Título:** Foco Dev: Transformação Digital e Estratégias de Captação para o Lar Bem Elizabeth.
+**Título:** Foco Dev: Transformação Digital e Estratégias de Captação para a instituição Lar Bem Elizabeth.
+<br>
 **Tipo de iniciativa:** Projeto de Extensão.
+<br>
 **Carga horária total:** 60 h.
+<br>
 **Curso:** Ciência da Computação | **Escola:** Unicap Icam-Tech
 
 ---
 
 <div align="center">
-<h1>EIXO DE APRENDIZAGEM</h1>
+<h1>📎EIXO DE APRENDIZAGEM</h1>
 </div>
 
 ### Objetivos de Aprendizagem:
@@ -22,19 +25,19 @@
 ---
 
 <div align="center">
-<h1>EIXO PÚBLICO E REALIDADE</h1>
+<h1>👤 EIXO PÚBLICO E REALIDADE</h1>
 </div>
 
 ### Problema ou necessidade a ser respondido
 A carência de presença digital e de infraestrutura estratégica para captação de recursos na instituição social local Lar Bem Elizabeth (LARBEM). Atualmente, essa organização enfrenta dificuldades em divulgar suas ações e garantir sustentabilidade financeira, o que limita o impacto de seus projetos assistenciais na comunidade.
 
 ### Apresentação e descrição do Público Parceiro
-O projeto atende ao LARBEM, instituição de assistência social que necessita de modernização em sua comunicação digital e apoio comunitário voltado para estratégias de sustentabilidade financeira. O público-alvo direto são os gestores e voluntários da instituição, e o público indireto é a comunidade local beneficiada pelas suas ações sociais.
+O projeto atende ao LARBEM, instituição de assistência social que precisa de modernização em sua comunicação digital e apoio comunitário voltado para estratégias de sustentabilidade financeira. O público-alvo direto são os gestores e voluntários da instituição, e o público indireto é a comunidade local beneficiada pelas suas ações sociais.
 
 ---
 
 <div align="center">
-<h1>EIXO SERVIÇO</h1>
+<h1>🔨 EIXO SERVIÇO</h1>
 </div>
 
 ### Objetivo principal / Serviço que será oferecido
@@ -67,7 +70,7 @@ O projeto prevê a entrega de um guia básico de utilização do site e das estr
 ---
 
 <div align="center">
-  <h1>EIXO IMPACTO</h1>
+  <h1>⭐ EIXO IMPACTO</h1>
 </div>
 
 ### Objetivo de Desenvolvimento Sustentável Impactado:
